@@ -3,6 +3,12 @@
 This example is a small ready to go implementation of JWE in a server-client applicaton which is based on cisco's node-jose
 (https://github.com/cisco/node-jose/).
 
+## Installation
+
+To install Latest from npm :
+```
+ npm install node-jose
+ ```
 ## For Encryption
 ```
 jose.JWE.createEncrypt(key).
