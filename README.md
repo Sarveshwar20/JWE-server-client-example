@@ -1,14 +1,17 @@
 ## About
 
-This example is a small ready to go implementation of JWE in a server-client applicaton which is based on cisco's node-jose
-(https://github.com/cisco/node-jose/).
+This example is a small ready to go implementation of JWE in a server-client applicaton which is based on cisco's node-jose. For details: https://github.com/cisco/node-jose
 
 ## Installation
 
-To install Latest from npm :
+We will need to install node-jose first:
 ```
  npm install node-jose
  ```
+After you're done with installation, you'll just have to import the library as normal:
+```
+var jose = require('node-jose');
+```
 ## For Encryption
 ```
 jose.JWE.createEncrypt(key).
