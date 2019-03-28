@@ -9,11 +9,11 @@ We will need to install node-jose first:
  npm install node-jose
  ```
 After you're done with installation, you'll just have to import the library as normal:
-```
+```javascript
 var jose = require('node-jose');
 ```
 ## For Encryption
-```
+```javascript
 jose.JWE.createEncrypt(key).
         update(input).
         final().
@@ -23,7 +23,7 @@ jose.JWE.createEncrypt(key).
 ```
 
 ## For Decrytion 
-```
+```javascript
 jose.JWE.createDecrypt(keystore).
         decrypt(input).
         then(function(result) {
